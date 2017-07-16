@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/indexTopbar.css">
+	<link rel="stylesheet" href="css/headWarp.css">
+</head>
+<body>
+	<div id="TopBar" class="TopBar">
+		<div class="top_blank">
+			<div class="topbar_left">
+				<h2>城市</h2>
+				<span id="location">
+					[
+					<a href="#">切换城市</a>
+					]
+				</span>
+				<div class="weather">
+					<span>雷阵雨转多云 35~36℃</span>
+					<span class="weather_level">优</span>
+					<span class="mark"></span>
+					<div class="weatherbox">
+						<div class="air">
+							成都今日空气质量指数:
+							<em>41</em>
+							<div class="wsource">
+								更多天气查看
+								<a href="http://tianqi.moji.com/?from=58">墨迹天气</a>
+							</div>
+						</div>
+						<div class="dot"></div><!-- 分割 -->
+						<div class="wDay">
+							<ul>
+								<li><p class="w_time">今天(周一)</p>
+									<img src="http://img.58cdn.com.cn/ui6/index/weather/wb_n_4.png" alt="">
+									<p>33 ~ 25℃
+										<br>雷阵雨<br>
+										西南风3级
+									</p>
+								</li>
+								<li class="dayW"></li>
+								<li class="dayW"></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="topbar_right">
+				<div class="topbar_login">
+					<a href="#">登录</a>
+					<span>/</span>
+					<a href="#">注册</a>
+				</div>
+				<div class="topbar_mymenu _haschild">
+					<a href="#">个人中心</a>
+					<span class="arrow"></span>
+					<span class="mark"></span><!-- 间隔线 -->
+					<div class="hc" id="login_box">
+						<a href="">个人信息</a>
+						<a href="">账号管理</a>
+						<a href="">我的发布</a>
+						<a href="">安全中心</a>
+					</div>
+				</div>
+				<div class="topbar_vip _haschild">
+					<a href="#">商家中心</a>
+					<span class="arrow"></span>
+					<span class="mark"></span>
+					<div class="hc" id="vip_box">
+						<a href="">商家发布</a>
+						<a href="">账号管理</a>
+						<a href="">交易管理</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="headWarp">
+		<div id="homeWarp">
+			<div class="header">
+				<div class="head_search">
+					<a href="http://www.58.com" id="logo" traget="_self">
+						<img src="img/logo-o.png" style="width:126px"  title="你好"alt="简介：这是一个网站" id="biglogo">
+						<img src="img/logo-wo.png" alt="" id="minilogo" style="display:none">
+					</a>
+					<form onsubmit="">
+						<div class="searchbar">
+							<div class="searchkey">
+								<span>
+									<input type="text" id="keyword">
+								</span>
+							</div>
+							<div class="inputcon">
+								<input type="submit" id="searchbtn" class="sbtn" value="搜&nbsp索" >
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<ul class="navcon"></ul>
+		</div>
+	</div>
+	<div id="main">
+	</div>
+	<div id="footer">
+	</div>
+	<script src="js/jQuery-2.2.0.min.js"></script>
+</body>
+</html>
+<script>
+	$(".weather").hover(function(){
+		$(".weather").addClass("w_hover");
+	},
+	function(){
+		$(".weather").removeClass("w_hover");
+	});
+
+	$("._haschild").hover(function(){
+		var e = $(this);
+		e.addClass("hover");
+	},
+	function(){
+		var e = $(this);
+		e.removeClass("hover");
+	});
+
+</script>

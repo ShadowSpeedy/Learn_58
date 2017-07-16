@@ -1,0 +1,75 @@
+#homeWarp{
+	margin: 0 auto;
+	width: 1190px;
+	background-color: #fff;
+}
+
+.head_search{
+	margin-top: 20px;
+	width: 1190px;
+	position: relative;
+	z-index: 101;
+}
+#logo{
+	display: inline-block;
+    position: absolute;
+    left: 38px;
+    top: 8px;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+a:-webkit-any-link{
+	color: -webkit-link;
+    cursor: auto;
+}
+form{
+	display: block;
+	margin-top: 0;
+}
+.searchbar{
+	 display: block;
+	 position: absolute;
+	 left: 380px;
+	 top: 10px;
+}
+.searchkey{
+	float: left;
+	overflow: hidden;
+	width: 490px;
+	height: 38px;
+	line-height: 38px;
+	border: 2px solid #FF552E;
+	padding-left: 34px;
+	border-right: 0;
+	background: url(http://img.58cdn.com.cn/ui6/index/minico.png?v=6) 10px -105px no-repeat;
+    background-color: #fff;
+}
+#keyword{
+	height: 38px;
+	line-height: 38px;
+	width: 100%;
+	font-size: 14px;
+    color: #ccc;
+    border: 0;
+    overflow: hidden;
+}
+.inputcon{
+	float: left;	
+}
+#searchbtn{
+	-webkit-appearance: none;
+    -webkit-border-radius: 0;
+	overflow: hidden;
+	font-style: 16px;
+	font-family: "Hiragino Sans GB","Microsoft YaHei","微软雅黑";
+	width: 100px;
+	height: 42px;
+	line-height: 40px;
+	cursor: pointer;
+	text-align: center;
+	color: #fff;
+	border: 0 solid #FF552E;
+	background-color: #FF552E;
+}

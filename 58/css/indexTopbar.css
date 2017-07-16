@@ -1,0 +1,221 @@
+p, body {
+    margin: 0;
+    padding: 0;
+}
+.TopBar{    
+	font: 12px/1.2 "Hiragino Sans GB","Microsoft YaHei","\5FAE\8F6F\96C5\9ED1",arial,Tahoma,SimSun,sans-serif;
+	text-rendering: geometricPrecision;/*text-rendering: auto | optimizeSpeed | optimizeLegibility |  geometricPrecision |  inherit
+	*/
+	-webkit-font-smoothing: antialiased;/* 反锯齿 */
+	position: relative;
+	z-index: 9999;
+	width: 100%;
+	height: 35px;
+	line-height: 35px;/* 行高 */
+	background: #fff ;
+	color: #555;
+	border-bottom: 1px solid #141DEA;
+}
+
+.TopBar a, .TopBar div, .TopBar h1, .TopBar h2, .TopBar h3, .TopBar h4, .TopBar h5, .TopBar h6, .TopBar span, .TopBar p, .TopBar ul, .TopBar li {
+    font-family: "Hiragino Sans GB","Microsoft YaHei","\5FAE\8F6F\96C5\9ED1",arial,Tahoma,SimSun,sans-serif!important;
+    font-size: 12px;
+    }
+body, .TopBar dd, .TopBar dl, .TopBar dt, .TopBar h2, .TopBar h3, .TopBar h4, .TopBar h6, .TopBar li, .TopBar ol, .TopBar p, .TopBar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    -webkit-text-size-adjust: none;
+}
+.top_blank a{
+	text-decoration:none;
+	cursor: pointer;
+}
+.top_blank a:visited{
+	color: #555;
+}
+.top_blank a:hover{
+	color: #FF552E;
+}
+
+/* 分3栏 */
+.top_blank{
+	width:1190px; 
+	margin: 0 auto;
+}
+
+.topbar_left{
+	float: left;
+	word-spacing: 1px;
+	height: 35px;
+	line-height: 35px;
+}
+.topbar_right{
+	float: right;
+ 	word-spacing: 1px;
+ 	height: 35px;
+	line-height: 35px;
+}
+.topbar_left h2{
+	display: inline;
+    font-size: 12px;
+    color: #ff552e;
+    float: left;
+    line-height: 35px;
+    font-weight: 700;
+}
+.TopBar #location {
+    float: left;
+    margin: 0 10px 0 8px;
+}
+.TopBar .weather {
+    float: left;
+    position: relative;
+    cursor: pointer;
+    
+    padding: 0 10px;
+    border: 1px solid #fff;
+	border-bottom: none;
+    border-top: none;
+}
+.TopBar .weather {
+    border-color: #141DEA;
+}
+.weather_level{
+	margin: 0 0 0 10px;
+    padding: 0 3px;
+    display: inline-block;
+    border-radius: 2px;
+    line-height: 16px;
+	color: #fff;
+	background-color: #5BE211;
+}
+
+.TopBar .mark{
+	position: absolute;
+	top:34px;
+	right: 0;
+	height: 3px;
+	width: 100%;
+	overflow: hidden;
+	z-index: 1001;
+	background-color: #fff;
+	display: none;
+}
+.TopBar .w_hover .mark{
+	display: block;
+}
+.weatherbox{
+	border: 1px solid #141DEA;
+	position: absolute;
+	top: 35px;
+	left: -1px;
+	background-color: #fff;
+	line-height: 20px;
+	width: 470px;
+	z-index: 1000;
+	display: none;
+}
+.air{
+	padding: 0 10px;
+	line-height: 30px;
+	color: #555;
+}
+.air em{
+	color: #FF552E;
+	font-size: 16px;
+    vertical-align: middle;
+    font-style: normal;
+}
+.wsource{
+	position: absolute;
+	top:0;
+	right: 10px;
+}
+.wDay{
+    padding: 10px 0;
+    overflow: hidden;
+    position: relative;
+    left: -1px;
+    zoom: 1;
+}
+.wDay img{
+	display: block;
+    width: 60px;
+    height: 60px;
+    margin: 10px auto 5px;
+}
+
+.wDay li{
+	text-align: center;
+	float: left;
+	border-left: 1px solid #555;
+	width: 155px;
+	height: 156px;
+}
+.w_hover .weatherbox{display: block;}
+
+.topbar_right .topbar_login{
+	padding: 0 10px;
+	float: left;
+	height: 35px;
+	line-height: 35px;
+}
+.topbar_right .topbar_mymenu{
+	padding: 0 10px;
+	float: left;
+	height: 35px;
+	line-height: 35px;
+}
+.topbar_right .topbar_vip{
+	padding: 0 10px;
+	float: left;
+	height: 35px;
+	line-height: 35px;
+}
+.TopBar ._haschild{
+	position:relative;
+	padding: 0 24px 0 14px;
+    border: 1px solid #fff;
+    border-bottom: none;
+    border-top: none;
+}
+.arrow{
+	position:absolute;
+	right:10px;
+	top:16px;
+	margin-left: 8px;
+	background: url(../img/topbar_icons.png) no-repeat -10px -470px;
+	display: block;
+	float: left;
+	overflow: hidden;
+	width:7px;
+	height: 4px;
+}
+.hc{
+	position:absolute;
+	width:86px;
+	border: 1px solid  #141DEA;	
+	top:36px;
+	right: -1px;
+	display: none;
+}
+.hc a{
+	display: block;
+	text-align: center;
+	padding: 3px 10px;
+	line-height: 30px;
+}
+.TopBar .hover .mark{
+	display: block;
+}
+
+.TopBar  .topbar_right .hover{
+	border-color: #141DEA;
+}
+.TopBar .hover .hc{
+	display: block;
+}
+.TopBar .hover .arrow{
+	-webkit-transform:rotate(-180deg);-ms-transform:rotate(-180deg);-o-transform:rotate(-180deg);transform:rotate(-180deg)
+}
