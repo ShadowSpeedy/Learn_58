@@ -3,6 +3,10 @@
 	width: 1190px;
 	background-color: #fff;
 }
+.header{
+	width: 1190px;
+	height: 80px;
+}
 
 .head_search{
 	margin-top: 20px;
@@ -10,6 +14,7 @@
 	position: relative;
 	z-index: 101;
 }
+
 #logo{
 	display: inline-block;
     position: absolute;
@@ -21,7 +26,6 @@ a {
     cursor: pointer;
 }
 a:-webkit-any-link{
-	color: -webkit-link;
     cursor: auto;
 }
 form{
@@ -72,4 +76,127 @@ form{
 	color: #fff;
 	border: 0 solid #FF552E;
 	background-color: #FF552E;
+}
+
+body, dd, dl, dt, h2, h3, h4, h6, li, ol, p, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    -webkit-text-size-adjust: none;
+}
+
+.navcon{
+	width: 1190px;
+	height: 34px;
+	line-height: 34px;
+	margin-top: 10px;
+	border-bottom: 2px solid  #ff552e;
+}
+.navcon li{
+	float: left;
+}
+.homenav{
+	padding: 0 36px;
+	background-color: #ff552e;
+	border-radius: 2px 2px 0 0;
+}
+.homenav>a{
+	color: #fff;
+	font-weight: 800;
+	display: block;
+}
+.nav {
+	
+	position: relative;
+	margin-left: 10px;
+	z-index: 100;	
+}
+.navcon .hasbox{
+	color: #ff552e;
+	font-weight: 700;
+	border: 1px solid #fff;
+	border-bottom: none;
+	height: 33px;
+	width: 100px;
+	line-height: 32px;
+	display: block;
+	text-align: center;
+}
+
+#app58{
+	padding-left: 14px;
+}
+.hasbox .icon{
+	width: 30px;
+    height: 30px;
+    top: 0;
+    left: 12px;
+    position: absolute;
+    background: url(http://img.58cdn.com.cn/ui6/index/58app.gif?v=1) no-repeat;
+}
+.rednavbox{
+	border: 1px solid #ff552e;
+	background-color: #fff;
+	position: absolute;
+	left: 0;
+	top: 34px;
+	overflow: hidden;
+	width: 230px;
+	padding: 16px 0 14px 20px;
+	z-index: 120;
+	display: none;
+}
+.rednavbox .boxlist{
+	float: left;
+	width: 218px;
+	height: 100px;
+	display: block;
+	color: #fff;
+}
+.rednavbox .boxpic{
+	float: left;
+	margin-right: 20px;
+	height: 100px;
+	width: 100px;
+	background: url(http://img.58cdn.com.cn/ui6/index/2barcode.png?v=25) no-repeat;
+}
+#app58 .mark {
+    width: 114px;
+    right: 1px;
+    top: 32px;
+}
+.nav .mark{
+	width: 100px;
+    right: 1px;
+    top: 32px;
+}
+.navcon .hover .mark{
+	display: block;
+}
+.navcon .hover .rednavbox{
+	display: block;
+}
+.navcon .hover .hasbox {
+	border-color: #ff552e;
+}
+.navcon .hover .arrow{
+	-webkit-transform:rotate(-180deg);-ms-transform:rotate(-180deg);-o-transform:rotate(-180deg);transform:rotate(-180deg)
+}
+.navcon .navGary{
+	margin-left: 20px;
+	border-radius: 2px 2px 0 0;
+	background-color: #fff;
+	padding: 0 12px;
+	line-height: 34px;
+	font-weight: 700;
+	height: 34px;
+}
+.navcon .navGary a{
+	color: #888;
+}
+.navcon .ghover {
+	background-color: #ff552e;
+}
+.navcon .ghover a{
+	color: #fff;
 }

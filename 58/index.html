@@ -88,7 +88,7 @@
 						<div class="searchbar">
 							<div class="searchkey">
 								<span>
-									<input type="text" id="keyword">
+									<input type="text" style="outline:none;" id="keyword">
 								</span>
 							</div>
 							<div class="inputcon">
@@ -98,7 +98,57 @@
 					</form>
 				</div>
 			</div>
-			<ul class="navcon"></ul>
+			<ul class="navcon">
+				<li class="homenav">
+					<a href="#">首页</a>
+				</li>
+				<li class="nav">
+					<a href="#" id="app58" class=" rednav hasbox">
+						<span class="icon"></span>
+						<i class="arrow"></i>
+						<span class="mark"></span>
+						58APP
+					</a>
+					<div class="rednavbox">
+							<div class="boxlist">
+								<div class="boxpic"></div>
+								<div class="boxtext"></div>
+							</div>
+						</div>
+				</li>
+				<li class="nav">
+					<a href="#" class=" rednav hasbox">
+						<i class="arrow"></i>
+						<span class="mark"></span>
+						商家APP
+					</a>
+					<div class="rednavbox">
+							<div class="boxlist">
+								<div class="boxpic"></div>
+								<div class="boxtext"></div>
+							</div>
+						</div>
+				</li>
+				<li class="nav">
+					<a href="#" class=" rednav hasbox">
+						<i class="arrow"></i>
+						<span class="mark"></span>
+						同城交易
+					</a>
+					<div class="rednavbox">
+							<div class="boxlist">
+								<div class="boxpic"></div>
+								<div class="boxtext"></div>
+							</div>
+						</div>
+				</li>
+				<li class="navG navGary" id="navG">
+					<a href="#" class="whitenav">
+						百度搜索
+					</a>
+				</li>
+				<li class="navG"></li>
+			</ul>
 		</div>
 	</div>
 	<div id="main">
@@ -108,6 +158,8 @@
 	<script src="js/jQuery-2.2.0.min.js"></script>
 </body>
 </html>
+
+
 <script>
 	$(".weather").hover(function(){
 		$(".weather").addClass("w_hover");
@@ -123,6 +175,22 @@
 	function(){
 		var e = $(this);
 		e.removeClass("hover");
+	});
+	$(".nav").hover(function(){
+		var e = $(this);
+		e.addClass("hover");
+	},
+	function(){
+		var e = $(this);
+		e.removeClass("hover");
+	});
+	$(".navG").hover(function(){
+		var e = $(this);
+		e.addClass("ghover");
+	},
+	function(){
+		var e = $(this);
+		e.removeClass("ghover");
 	});
 
 </script>

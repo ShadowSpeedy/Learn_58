@@ -78,7 +78,7 @@ body, .TopBar dd, .TopBar dl, .TopBar dt, .TopBar h2, .TopBar h3, .TopBar h4, .T
 	border-bottom: none;
     border-top: none;
 }
-.TopBar .weather {
+.TopBar .w_hover  {
     border-color: #141DEA;
 }
 .weather_level{
@@ -91,7 +91,7 @@ body, .TopBar dd, .TopBar dl, .TopBar dt, .TopBar h2, .TopBar h3, .TopBar h4, .T
 	background-color: #5BE211;
 }
 
-.TopBar .mark{
+.mark{
 	position: absolute;
 	top:34px;
 	right: 0;
